@@ -13,7 +13,9 @@
         </header>
         <nav>
             <h2>
-                Journal Entries:
+                <span>
+                    Journal Entries:
+                </span>
             </h2>
             <ol>
                 <li><a href="#apr6">April 6, 2021</a></li>
@@ -22,6 +24,7 @@
             </ol>
         </nav>
         <main id="entries">
+            <hr>
             <section id="apr6">
                 <h2>
                     Journal Entry: April 6, 2021
@@ -29,19 +32,37 @@
                 <h3>
                     Today's Highlights
                 </h3>
+                <ul>
+                    <li>Took a nice walk around UCSD's campus</li>
+                </ul>
                 <h3>
                     Today's Lowlights
                 </h3>
+                <ul>
+                    <li>I had 3 events back to back today, from 4PM to 8PM. That kept me busy for a while.</li>
+                </ul>
                 <h3>
                     Tasks
                 </h3>
+                <ul>
+                    <li>Finish up the CSE 105 homework that is due on Wednesday</li>
+                    <li>Watch the CSE 101 Lecture recording that I missed</li>
+                </ul>
                 <h3>
-                    Vents
+                    Thoughts
                 </h3>
+                <p>
+                    I went to a student org representative panel for the Engineering Overnight Program today, and I was representing <b>ACM</b> which is the Association for Computing Machinery, and we are the UC San Diego branch.
+                </p>
                 <h3>
-                    Picture
+                    Audio Clip
                 </h3>
+                <p>
+                    Listen to some sample music:
+                </p>
+                <audio controls src="music.mp3">
             </section>
+            <hr>
             <section id="apr7">
                 <h2>
                     Journal Entry: April 7, 2021
@@ -49,19 +70,39 @@
                 <h3>
                     Today's Highlights
                 </h3>
+                <ul>
+                    <li>Going to the ACM Cooking Night event.</li>
+                    <li>Going to ECE Day and tabling for ACM there.</li>
+                </ul>
                 <h3>
                     Today's Lowlights
                 </h3>
+                <ul>
+                    <li>Didn't get much sleep last night.</li>
+                </ul>
                 <h3>
                     Tasks
                 </h3>
+                <ul>
+                    <li><strong>Important:</strong> Start working on the CSE 110 lab</li>
+                    <li>Watch the lecture recording for CSE 105</li>
+                </ul>
                 <h3>
-                    Vents
+                    Thoughts
                 </h3>
+                <p>
+                    You know what car is cool? The <i>Hyundai Kona Electric</i>. It combines the practicality of a SUV with the fun and efficiency of an electric vehicle. 
+                    <br>
+                    A Tesla but at a fraction of the cost (and a good bit more reliable, too)!
+                    <br>
+                    Here's a link to the <a href="https://www.hyundaiusa.com/us/en/vehicles/kona-electric">manufacturer info page</a> about it. I put an image of it below.
+                </p>
                 <h3>
-                    Audio Clip
+                    Image
                 </h3>
+                <img src="kona.jpeg" alt="Hyunda Kona Electric in grey">
             </section>
+            <hr>
             <section id="apr8">
                 <h2>
                     Journal Entry: April 8, 2021
@@ -69,19 +110,101 @@
                 <h3>
                     Today's Highlights
                 </h3>
+                <ul>
+                    <li>There was another ACM event today. Fun stuff.</li>
+                </ul>
                 <h3>
                     Today's Lowlights
                 </h3>
+                <ul>
+                    <li>I think I'm going to be up late today.</li>
+                </ul>
                 <h3>
                     Tasks
                 </h3>
+                <ul>
+                    <li>Keep working on the CSE 110 lab (hopefully, finish it)</li>
+                    <ul>
+                        <li>Learn how to <b>style</b> text</li>
+                        <li>Push all of the changes to GitHub</li>
+                    </ul>
+                </ul>
                 <h3>
-                    Vents
+                    Thoughts
                 </h3>
+                <p>
+                    I found this cool video clip. I put it into the page below.
+                </p>
                 <h3>
                     Video Clip
                 </h3>
+                <details>
+                    <summary>Video Information</summary>
+                    <i>Big Buck Bunny</i> is a super interesting open-source film that serves to demonstrate the power of open source software, specifically <em>Blender</em>.
+                </details>
+                <video controls width="320">
+                    <source src="bigBuckBunny.mp4" type="video/mp4">
+                </video>
             </section>
+            <hr>
+            <section id="submission">
+                <h2>
+                    Submit an Entry:
+                </h2>
+                <form>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <fieldset>
+                        <legend>Choose User:</legend>
+                        <input type="radio" id="bryce" name="user">
+                        <label for="bryce">Bryce</label>
+                        <br>
+                        <input type="radio" id="other" name="user">
+                        <label for="other">Someone Else</label>
+                    </fieldset>
+                    <label for="username">Enter a username if you chose Someone Else above:</label>
+                    <input type="text" name="username">
+                    <fieldset>
+                        <legend>Choose Elements:</legend>
+                        <input type="checkbox" id="highlights" name="elements">
+                        <label for="highlights">Highlights</label>
+                        <br>
+                        <input type="checkbox" id="lowlights" name="elements">
+                        <label for="lowlights">Lowlights</label>
+                        <br>
+                        <input type="checkbox" id="tasks" name="elements">
+                        <label for="tasks">Tasks</label>
+                        <br>
+                        <input type="checkbox" id="thoughts" name="elements">
+                        <label for="thoughts">Thoughts</label>
+                        <br>
+                        <input type="checkbox" id="media" name="elements">
+                        <label for="media">Media</label>
+                    </fieldset>
+                    <label for="thoughts_box">Write down thoughts for the Thoughts entry:</label>
+                    <br>
+                    <textarea id="thoughts_box" name="thoughts_box"></textarea>
+                    <br>
+                    <label for="media_type">Choose Media Type:</label>
+                    <datalist id="media_type">
+                        <option value="">Select Type</option>
+                        <option value="image">Image</option>
+                        <option value="video">Video Clip</option>
+                        <option value="audio">Audio Clip</option>
+                    </datalist>
+                    <br>
+                    <label for="delay">Choose Post Delay:</label>
+                    <datalist id="delay">
+                        <option value="">Select Delay</option>
+                        <option value="image">Immediately</option>
+                        <option value="video">In 1 Day</option>
+                        <option value="audio">In 2 Days</option>
+                    </datalist>
+                    <br>
+                    <button>Submit Post</button>
+                </form>
+            </section>
+            <hr>
         </main>
         <footer>
             <div id="footerContent">
