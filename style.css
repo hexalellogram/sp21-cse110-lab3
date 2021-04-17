@@ -23,16 +23,64 @@ h2 { /* changes the background color of all journal entry headers to red and cha
 ul, ol { /* style lists*/
     border-width: 0.5vw;
     border-color: hsl(118, 60%, 38%);
-    border-style: groove;
+    border-style: dotted;
     border-radius: 2em;
+    padding: 25px 6px 30px 80px;
 }
 
 audio[src="music.mp3"] { /* make the audio wide */
     width: 65vmin;
     max-width: 50%;
+    display: block;
 }
 
 img.kona-img { /* reduce the width of the kona image */
     height: 3in;
-    min-width: 40%
+    min-width: 40%;
+    display: inline;
+}
+
+details summary { /* style the big buck bunny info for the video */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+input:hover { /* make the textboxes turn gold on hover */
+    background-color: gold;
+}
+
+button:active { /* make the button turn aqua on click */
+    background-color: aqua;
+}
+
+input { /* set margin for the input boxes */
+    margin: auto;
+}
+
+button { /* give some spacing for the buttons */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer { /* space out the footer a bit */
+    margin: 5% 5% 5% 5%;
+}
+
+h3 + img { /* style the kona image a bit more separately with another selector */
+    border-width: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 2mm;
+}
+
+nav > ol { /* style the journal entries list */
+    margin-top: 50px;
+}
+
+h3 ~ p { /* style the thoughts */
+    color: gray;
 }
