@@ -22,7 +22,7 @@ h2 { /* changes the background color of all journal entry headers to red and cha
 
 ul, ol { /* style lists*/
     border-width: 0.5vw;
-    border-color: hsl(118, 60%, 38%);
+    border-color: hsl(36, 60%, 38%);
     border-style: dotted;
     border-radius: 2em;
     padding: 25px 6px 30px 80px;
@@ -70,7 +70,7 @@ footer { /* space out the footer a bit */
     margin: 5% 5% 5% 5%;
 }
 
-h3 + img { /* style the kona image a bit more separately with another selector */
+p + img { /* style the kona image a bit more separately with another selector */
     border-width: 10px;
     border-style: solid;
     border-color: gray;
@@ -83,4 +83,45 @@ nav > ol { /* style the journal entries list */
 
 h3 ~ p { /* style the thoughts */
     color: gray;
+}
+
+@media (min-width: 1290px) {
+    header {
+        border-width: 2px;
+        border-style: dashed;
+        border-color: brown;
+        border-radius: 2mm;
+    }
+}
+
+#kona {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-evenly;
+}
+
+#grid-area { 
+    display: grid;
+    grid-template-columns: 100px 70px 60px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 25%;
+}
+
+#col1 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    span:1;
+}
+
+#col2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    span:1;
+}
+
+#col3 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    span:1;
 }
