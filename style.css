@@ -2,6 +2,16 @@
     font-family: "Nunito", sans-serif;
 }
 
+h1 {
+    position: fixed;
+    background-color: white;
+    width: 100%
+}
+
+nav {
+    padding-top: 50px;
+}
+
 h2 { /* changes the background color of all journal entry headers to red and changes other colors */
     background-color: rgb(28, 141, 38);
     color: burlywood;
@@ -11,6 +21,9 @@ h2 { /* changes the background color of all journal entry headers to red and cha
 
 .highlights{ /* underlines the highlights */
     text-decoration: underline;
+    position: relative;
+    top: 10px;
+    left: 50px;
 }
 
 #submission { /* style the form submision area */
