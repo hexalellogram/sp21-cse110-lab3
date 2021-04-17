@@ -1,0 +1,38 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+h2 { /* changes the background color of all journal entry headers to red and changes other colors */
+    background-color: rgb(28, 141, 38);
+    color: burlywood;
+    text-align: center;
+    width: 75%;
+}
+
+.highlights{ /* underlines the highlights */
+    text-decoration: underline;
+}
+
+#submission { /* style the form submision area */
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #aea77e;
+    border-radius: 2mm;
+}
+
+ul, ol { /* style lists*/
+    border-width: 0.5vw;
+    border-color: hsl(118, 60%, 38%);
+    border-style: groove;
+    border-radius: 2em;
+}
+
+audio[src="music.mp3"] { /* make the audio wide */
+    width: 65vmin;
+    max-width: 50%;
+}
+
+img.kona-img { /* reduce the width of the kona image */
+    height: 3in;
+    min-width: 40%
+}
